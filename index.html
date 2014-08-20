@@ -27,10 +27,15 @@
         <button id="menuBtn">Layers</button>
       </span>
       <strong>Waterways</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="geo:37.89287113281247,-75.97086160156249?q=coffee">geo</a> <!-- works on android -->
-      <a href="http://maps.apple.com/?ll=37.89287113281247,-75.97086160156249&amp;q=coffee">apple</a> <!-- works on iOS -->
-      <a href="comgooglemaps://37.89287113281247,-75.97086160156249?q=coffee">comgooglemaps</a> <!-- iOS with Google Maps installed? -->
-      <a href="http://maps.google.com/maps?ll=37.89287113281247,-75.97086160156249&amp;q=coffee">google</a>
+
+      <!-- example links to open a location in other apps -->
+      <div style="display:none">
+      <a href="geo:37.89287113281247,-75.97086160156249?q=coffee">geo</a> <!-- goes to native app on android, broken on iOS -->
+      <a href="http://maps.apple.com/?ll=37.89287113281247,-75.97086160156249&amp;q=coffee">apple</a> <!-- goes to native app on iOS and android -->
+      <a href="comgooglemaps://37.89287113281247,-75.97086160156249?q=coffee">comgooglemaps</a> <!-- iOS with Google Maps installed?, broken on android -->
+      <a href="http://maps.google.com/maps?ll=37.89287113281247,-75.97086160156249&amp;q=coffee">google</a><!-- goes to native app on android, website on iOS -->
+      </div>
+
     </nav>
     <div id="menu" class="border-box">
       <button data-layer="bath">Bathymetry</button>
