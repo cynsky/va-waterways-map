@@ -18,7 +18,8 @@
   <body>
     <nav id="menu">
       <strong>Waterways</strong>&nbsp;&nbsp;&nbsp;
-      <input type="checkbox" id="showBath"> Show Bathymetry (takes a little while the first time)
+      <input type="checkbox" id="showBath" data-layer="bath"> Show Bathymetry (takes a little while the first time)
+      <input type="checkbox" id="showEst" data-layer="est"> Show Estuaries
     </nav>
     <div id="map"></div>
 
@@ -36,7 +37,11 @@
             "http://egisws02.nos.noaa.gov/ArcGIS/rest/services/Estuarine_Bathymetry/NOAA_Estuarine_Bathymetry/MapServer",
             //"http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
             { visible: false });
-          map.addLayers([ bathLayer ]);
+          window.estLayer = new ArcGISDynamicMapServiceLayer(
+            "http://www.deq.virginia.gov/arcgis/rest/services/public/2012_adb_fishconsump/MapServer",
+            { visible: false });
+          window.estLayer.setVisibleLayers([4]); // estuarine only
+          map.addLayers([ bathLayer, estLayer ]);
 
           if ('geolocation' in navigator) {
             navigator.geolocation.getCurrentPosition(function(pos) {
@@ -46,7 +51,10 @@
             });
           }
 
-          $('#showBath').click(function() { if (this.checked) { bathLayer.show(); } else { bathLayer.hide(); }});
+          $('input[type=checkbox][data-layer]').click(function() {
+            var layer = window[$(this).attr('data-layer') + 'Layer'];
+            if (this.checked) { layer.show(); } else { layer.hide(); }
+          });
       });
     </script>
     <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
