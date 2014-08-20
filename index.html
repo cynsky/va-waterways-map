@@ -97,6 +97,18 @@
         }
       });
 
+      // geocoding setup
+      require(["esri/tasks/locator", "esri/SpatialReference"],
+      function(Locator, SpatialReference) {
+        window.locator = new Locator("http://gismaps.vita.virginia.gov/arcgis/rest/services/Geocoding/VGIN_Composite_Locator/GeocodeServer");
+        locator.spatialReference = new SpatialReference({ wkid: 4326 });
+        locator.on("address-to-locations-complete", function(obj) {
+          // obj is e.g. { addresses: [...] }
+          // each address is { address: "...", location: { type: point, x: -77..., y: 37... }, score: 100 }
+          console.log(obj);
+        });
+      });
+
       // menu setup
       require(["dojo/query",
                "dojo/dom-attr",
