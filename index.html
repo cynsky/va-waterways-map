@@ -11,17 +11,21 @@
         padding: 5px; border-bottom: 1px solid #999;
        }
       #map { position: absolute; top: 38px; bottom: 0; width: 100%; }
-      #menuBtn { float: right; }
+      #menuRight { float: right; }
       #menu { position: absolute; top: 38px; right: 0px; width: 240px; display: none; z-index: 1; background-color: white; padding: 5px;
       border: 1px solid #999; border-top-width: 0; }
       #menu button { display: block; width: 100%; padding: 10px; }
       .border-box { -moz-box-siding: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+      #loading { display: none; }
     </style>
 
   </head>
   <body>
     <nav id="menuBar" class="border-box">
-      <button id="menuBtn">%</button>
+      <span id="menuRight">
+        <img id="loading" src="ajax-loader.gif">
+        <button id="menuBtn">%</button>
+      </span>
       <strong>Waterways</strong>
     </nav>
     <div id="menu" class="border-box">
@@ -38,13 +42,13 @@
                "esri/geometry/Point",
                "esri/layers/ArcGISDynamicMapServiceLayer",
                "esri/layers/KMLLayer",
+               "dojo/query",
                "dojo/domReady!"],
       function(Map,
                Point,
                ArcGISDynamicMapServiceLayer,
                KMLLayer,
-               query,
-               domAttr) {
+               query) {
         window.map = new Map("map",{
           basemap:"national-geographic",
           center:[-75.97086160156249,37.89287113281247],
@@ -63,6 +67,17 @@
             "http://www.dgif.virginia.gov/gis/kmz/DGIF_Boating_Access_Sites.kmz",
             { id: "ramp", visible: false })]);
         map.getLayer("est").setVisibleLayers([4]); // estuarine only
+
+        // loading spinner; only display if loading for more than 500ms
+        var loadingTimeout = 0;
+        dojo.connect(map, "onUpdateStart", function() {
+          clearTimeout(loadingTimeout);
+          loadingTimeout = setTimeout(function(){ query('#loading').style('display', 'inline'); }, 500);
+        });
+        dojo.connect(map, "onUpdateEnd", function() {
+          clearTimeout(loadingTimeout);
+          query('#loading').style('display', 'none');
+        });
 
         if ('geolocation' in navigator) {
           navigator.geolocation.getCurrentPosition(function(pos) {
