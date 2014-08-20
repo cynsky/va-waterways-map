@@ -26,6 +26,8 @@
         <img id="loading" src="ajax-loader.gif">
         <button id="menuBtn">Layers</button>
       </span>
+
+       
       <strong>Waterways</strong> &nbsp;&nbsp;&nbsp;&nbsp;
 
       <!-- example links to open a location in other apps -->
@@ -35,6 +37,8 @@
       <a href="comgooglemaps://37.89287113281247,-75.97086160156249?q=coffee">comgooglemaps</a> <!-- iOS with Google Maps installed?, broken on android -->
       <a href="http://maps.google.com/maps?ll=37.89287113281247,-75.97086160156249&amp;q=coffee">google</a><!-- goes to native app on android, website on iOS -->
       </div>
+
+         <button id="shellfish_search" onclick="shellFishSearch()">Shell Fish</button>
 
     </nav>
     <div id="menu" class="border-box">
@@ -150,6 +154,45 @@
             map.getLayer(id).show();
           }
         }
+      }
+
+      
+      function addShellFishToMap(featureSet) {
+          map.graphics.clear();
+
+          //Performance enhancer - assign featureSet array to a single variable.
+          var resultFeatures = featureSet.features;
+
+          //Loop through each feature returned
+          for (var i = 0, il = resultFeatures.length; i < il; i++) {
+              //Get the current feature from the featureSet.
+              //Feature is a graphic
+              var graphic = resultFeatures[i];
+              
+              symbol = new esri.symbol.SimpleMarkerSymbol();
+              symbol.setStyle(esri.symbol.SimpleMarkerSymbol.STYLE_SQUARE);
+              symbol.setSize(10);
+              symbol.setColor(new dojo.Color([255, 255, 0, 0.5]));
+              graphic.setSymbol(symbol);
+
+              //Set the infoTemplate.
+           //   infoTemplate = new InfoTemplate("${WATER_NAME}", "Water Name : ${WATER_NAME}");
+           //   graphic.setInfoTemplate(infoTemplate);
+
+              //Add graphic to the map graphics layer.
+              map.graphics.add(graphic);
+          }
+      }
+
+      function shellFishSearch() {
+         // shellfish
+         var queryTask = new esri.tasks.QueryTask("http://www.deq.virginia.gov/arcgis/rest/services/public/2012_adb_fishconsump/MapServer/4");
+
+         var query = new esri.tasks.Query();
+         query.where = "SHELLFISH  = 'Fully Supporting'";
+         query.returnGeometry = true;
+         query.outFields = ["SHELLFISH"];
+         queryTask.execute(query, addShellFishToMap);
       }
     </script>
   </body>
