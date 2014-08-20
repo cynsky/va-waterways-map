@@ -7,70 +7,99 @@
     <style>
       body { font-family: sans-serif; }
       html, body { height: 100%; width: 100%; margin: 0; padding: 0; }
-      #menu { position: absolute; top: 0; left: 0; height: 30px; width: 100%; background-color: white;
-        -moz-box-siding: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+      #menuBar { position: absolute; top: 0; left: 0; height: 38px; width: 100%; background-color: white;
         padding: 5px; border-bottom: 1px solid #999;
        }
-      #map { position: absolute; top: 30px; bottom: 0; width: 100%; }
+      #map { position: absolute; top: 38px; bottom: 0; width: 100%; }
+      #menuBtn { float: right; }
+      #menu { position: absolute; top: 38px; right: 0px; width: 240px; display: none; z-index: 1; background-color: white; padding: 5px;
+      border: 1px solid #999; border-top-width: 0; }
+      #menu button { display: block; width: 100%; padding: 10px; }
+      .border-box { -moz-box-siding: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
     </style>
 
   </head>
   <body>
-    <nav id="menu">
-      <strong>Waterways</strong>&nbsp;&nbsp;&nbsp;
-      <input type="checkbox" data-layer="bath"> Show Bathymetry (takes a little while the first time)
-      <input type="checkbox" data-layer="est"> Show Estuaries
-      <input type="checkbox" data-layer="ramp"> Show Boat Ramps
+    <nav id="menuBar" class="border-box">
+      <button id="menuBtn">%</button>
+      <strong>Waterways</strong>
     </nav>
+    <div id="menu" class="border-box">
+      <button data-layer="bath">Bathymetry</button>
+      <button data-layer="est">Estuaries</button>
+      <button data-layer="ramp">Boat Ramps</button>
+    </div>
     <div id="map"></div>
 
     <script src="//js.arcgis.com/3.10compact"></script>
     <script>
+      // map setup
       require(["esri/map",
                "esri/geometry/Point",
                "esri/layers/ArcGISDynamicMapServiceLayer",
                "esri/layers/KMLLayer",
-               "dojo/query",
-               "dojo/dom-attr",
                "dojo/domReady!"],
-        function(Map,
-                 Point,
-                 ArcGISDynamicMapServiceLayer,
-                 KMLLayer,
-                 query,
-                 domAttr) {
-          window.map = new Map("map",{
-            basemap:"national-geographic",
-            center:[-75.97086160156249,37.89287113281247],
-            zoom:12,
-            autoResize:true
-          });
-          window.bathLayer = new ArcGISDynamicMapServiceLayer(
+      function(Map,
+               Point,
+               ArcGISDynamicMapServiceLayer,
+               KMLLayer,
+               query,
+               domAttr) {
+        window.map = new Map("map",{
+          basemap:"national-geographic",
+          center:[-75.97086160156249,37.89287113281247],
+          zoom:12,
+          autoResize:true
+        });
+        map.addLayers([
+          new ArcGISDynamicMapServiceLayer(
             "http://egisws02.nos.noaa.gov/ArcGIS/rest/services/Estuarine_Bathymetry/NOAA_Estuarine_Bathymetry/MapServer",
             //"http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
-            { visible: false });
-          window.estLayer = new ArcGISDynamicMapServiceLayer(
+            { id: "bath", visible: false }),
+          new ArcGISDynamicMapServiceLayer(
             "http://www.deq.virginia.gov/arcgis/rest/services/public/2012_adb_fishconsump/MapServer",
-            { visible: false });
-          window.estLayer.setVisibleLayers([4]); // estuarine only
-          window.rampLayer = new KMLLayer(
+            { id: "est", visible: false }),
+          new KMLLayer(
             "http://www.dgif.virginia.gov/gis/kmz/DGIF_Boating_Access_Sites.kmz",
-            { visible: false });
-          map.addLayers([ bathLayer, estLayer, rampLayer ]);
+            { id: "ramp", visible: false })]);
+        map.getLayer("est").setVisibleLayers([4]); // estuarine only
 
-          if ('geolocation' in navigator) {
-            navigator.geolocation.getCurrentPosition(function(pos) {
-              var lat = pos.coords.latitude;
-              var lon = pos.coords.longitude;
-              window.map.centerAt(new Point(lon,lat));
-            });
-          }
-
-          query('input[type=checkbox][data-layer]').connect('onclick', function() {
-            var layer = window[domAttr.get(this, 'data-layer') + 'Layer'];
-            if (this.checked) { layer.show(); } else { layer.hide(); }
+        if ('geolocation' in navigator) {
+          navigator.geolocation.getCurrentPosition(function(pos) {
+            var lat = pos.coords.latitude;
+            var lon = pos.coords.longitude;
+            window.map.centerAt(new Point(lon,lat));
           });
+        }
       });
+
+      // menu setup
+      require(["dojo/query",
+               "dojo/dom-attr",
+               "dojo/domReady!"],
+      function (query, domAttr) {
+        var menuShown = false;
+        query('button#menuBtn').connect('onclick', function() {
+          query('#menu').style('display', menuShown ? 'none' : 'block');
+          menuShown = !menuShown;
+        })
+        query('button[data-layer]').connect('onclick', function() {
+          showLayer(domAttr.get(this, 'data-layer'));
+          query('#menu').style('display', 'none');
+          menuShown = false;
+        });
+      });
+
+      function showLayer(layer) {
+        for (var i in map.layerIds) {
+          var id = map.layerIds[i];
+          if (id != "layer0" && id != layer) {
+            map.getLayer(id).hide();
+          } else if (id == layer) {
+            map.getLayer(id).show();
+          }
+        }
+      }
     </script>
   </body>
 </html>
