@@ -41,6 +41,7 @@
       <button data-layer="bath">Bathymetry</button>
       <button data-layer="est">Estuaries</button>
       <button data-layer="ramp">Boat Ramps</button>
+      <button data-layer="road">Road Projects</button>
     </div>
     <div id="map"></div>
 
@@ -51,12 +52,14 @@
                "esri/geometry/Point",
                "esri/layers/ArcGISDynamicMapServiceLayer",
                "esri/layers/KMLLayer",
+               "esri/layers/FeatureLayer",
                "dojo/query",
                "dojo/domReady!"],
       function(Map,
                Point,
                ArcGISDynamicMapServiceLayer,
                KMLLayer,
+               FeatureLayer,
                query) {
         window.map = new Map("map",{
           basemap:"national-geographic",
@@ -74,7 +77,11 @@
             { id: "est", visible: false }),
           new KMLLayer(
             "http://www.dgif.virginia.gov/gis/kmz/DGIF_Boating_Access_Sites.kmz",
-            { id: "ramp", visible: false })]);
+            { id: "ramp", visible: false }),
+          new FeatureLayer(
+            "http://gis.vdot.virginia.gov/arcgis/rest/services/varoads/VARoads/FeatureServer/1",
+            { id: "road", visible: false })
+          ]);
         map.getLayer("est").setVisibleLayers([4]); // estuarine only
 
         // loading spinner; only display if loading for more than 500ms
@@ -130,6 +137,14 @@
         for (var i in map.layerIds) {
           var id = map.layerIds[i];
           if (id != "layer0" && id != layer) {
+            map.getLayer(id).hide();
+          } else if (id == layer) {
+            map.getLayer(id).show();
+          }
+        }
+        for (var i in map.graphicsLayerIds) {
+          var id = map.graphicsLayerIds[i];
+          if (id != "layer0" && id.indexOf(layer) != 0 /* ramp_2 */) {
             map.getLayer(id).hide();
           } else if (id == layer) {
             map.getLayer(id).show();
