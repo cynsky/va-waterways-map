@@ -26,9 +26,19 @@
 
     <script src="//js.arcgis.com/3.10compact"></script>
     <script>
-      require(["esri/map", "esri/geometry/Point", "esri/layers/ArcGISDynamicMapServiceLayer",
-                "esri/layers/KMLLayer", "dojo/domReady!"],
-        function(Map, Point, ArcGISDynamicMapServiceLayer, KMLLayer) {
+      require(["esri/map",
+               "esri/geometry/Point",
+               "esri/layers/ArcGISDynamicMapServiceLayer",
+               "esri/layers/KMLLayer",
+               "dojo/query",
+               "dojo/dom-attr",
+               "dojo/domReady!"],
+        function(Map,
+                 Point,
+                 ArcGISDynamicMapServiceLayer,
+                 KMLLayer,
+                 query,
+                 domAttr) {
           window.map = new Map("map",{
             basemap:"national-geographic",
             center:[-75.97086160156249,37.89287113281247],
@@ -56,12 +66,11 @@
             });
           }
 
-          $('input[type=checkbox][data-layer]').click(function() {
-            var layer = window[$(this).attr('data-layer') + 'Layer'];
+          query('input[type=checkbox][data-layer]').connect('onclick', function() {
+            var layer = window[domAttr.get(this, 'data-layer') + 'Layer'];
             if (this.checked) { layer.show(); } else { layer.hide(); }
           });
       });
     </script>
-    <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
   </body>
 </html>
