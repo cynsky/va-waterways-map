@@ -6,6 +6,7 @@ require([
 	"esri/layers/FeatureLayer",
 	"esri/dijit/OverviewMap",
 	"esri/geometry/Point",
+	"esri/InfoTemplate",
 	"dojo/query",
 	"dojo/domReady!"
 	], function(
@@ -16,6 +17,7 @@ require([
 		FeatureLayer,
 		OverviewMap,
 		Point,
+		InfoTemplate,
 		query) {
 	window.map = new Map("map", {
 		basemap: "osm",
@@ -84,7 +86,20 @@ require([
 			{ id: "radar", visible: false })
 		]);
 
-		
+	// popups
+	var estTemplate = new InfoTemplate();
+	estTemplate.setTitle("Estuary Segment");
+	estTemplate.setContent('<p><strong>${WATER_NAME}</strong></p><p>${LOCATION}</p><ul class="infoTemplate"><li><strong>Aquatic Life:</strong> ${AQUA_LIFE}</li><li><strong>Fish Consumption:</strong> ${FISH_CONSU}</li><li><strong>Recreation:</strong> ${RECREATION}</li><li><strong>Shellfish:</strong> ${SHELLFISH}</li>')
+	var hospTemplate = new InfoTemplate();
+	hospTemplate.setTitle("Hospital");
+	hospTemplate.setContent('<p><strong>${HOSP_NAME}</strong></p><p>${PHYS_ST_1}<br>${PHYS_CITY}</p>${WEBSITE:formatWebsite}');
+
+	map.getLayer("est").setInfoTemplates({
+		0: { infoTemplate: hospTemplate },
+		1: { infoTemplate: estTemplate }
+	});
+	
+
 	// geolocation
 	if ('geolocation' in navigator) {
 		navigator.geolocation.getCurrentPosition(function (pos) {
@@ -92,3 +107,9 @@ require([
 		});
 	}
 });
+
+var formatWebsite = function(value, key, data) {
+	if (!value || value.length == 0) return "";
+	if (value.indexOf("http") != 0) { value = "http://" + value; }
+	return '<p><a href="' + value + '" target="_blank">Visit website</a></p>';
+};
