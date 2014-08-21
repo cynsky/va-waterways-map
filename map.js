@@ -43,11 +43,11 @@ require([
 	var overviewMapDijit = new OverviewMap({
 	    map: window.map,
 	    baseLayer: radar,
-	    attachTo: "bottom-right",
+	    attachTo: "bottom-left",
 	    color:" #D84E13",
 	    opacity: .40,
-	    width: 250,
-	    height:250,
+	    width: 240,
+	    height:240,
 	    visible: true
 	    
 	    });
