@@ -107,5 +107,5 @@ require([
 var formatWebsite = function(value, key, data) {
 	if (!value || value.length == 0) return "";
 	if (value.indexOf("http") != 0) { value = "http://" + value; }
-	return '<p><a href="' + value + '">Visit website</a></p>';
+	return '<p><a href="' + value + '" target="_blank">Visit website</a></p>';
 };
