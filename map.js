@@ -25,8 +25,6 @@ require([
 		zoom: 9
 	});
 
-
-
 	// loading spinner
 	var loadingTimeout = 0;
 	dojo.connect(map, "onUpdateStart", function() {
@@ -39,7 +37,6 @@ require([
 		clearTimeout(loadingTimeout);
 		query('#loading').style('display', 'none');
 	});
-
 
 	var overviewMapDijit = new OverviewMap({
 	    map: window.map,
@@ -55,14 +52,14 @@ require([
 	overviewMapDijit.startup();
 	overviewMapDijit.show();
 
-
-	
-
 	// map layers
 	map.addLayers([
-		// estuaries and hospitals
-		new ArcGISDynamicMapServiceLayer("http://deq.virginia.gov/arcgis/rest/services/staff/Estuaries_2012/MapServer",
-			{ id: "est", visible: false }),
+		// hospitals
+		new FeatureLayer("http://deq.virginia.gov/arcgis/rest/services/staff/Estuaries_2012/MapServer/0",
+			{ id: "hosp", visible: false, outFields: ["HOSP_NAME", "PHYS_ST_1", "PHYS_CITY", "WEBSITE"] }),
+		// estuaries
+		new FeatureLayer("http://deq.virginia.gov/arcgis/rest/services/staff/Estuaries_2012/MapServer/1",
+			{ id: "est", visible: false, outFields: ["WATER_NAME", "LOCATION", "AQUA_LIFE", "FISH_CONSU", "RECREATION", "SHELLFISH"] }),
 		// boat ramps
 		new KMLLayer("http://www.dgif.virginia.gov/gis/kmz/DGIF_Boating_Access_Sites.kmz",
 			{ id: "ramp", visible: false }),
@@ -94,11 +91,17 @@ require([
 	hospTemplate.setTitle("Hospital");
 	hospTemplate.setContent('<p><strong>${HOSP_NAME}</strong></p><p>${PHYS_ST_1}<br>${PHYS_CITY}</p>${WEBSITE:formatWebsite}');
 
-	map.getLayer("est").setInfoTemplates({
-		0: { infoTemplate: hospTemplate },
-		1: { infoTemplate: estTemplate }
-	});
-	
+	map.getLayer("hosp").infoTemplate = hospTemplate;
+	map.getLayer("est").infoTemplate = estTemplate;
+
+	// default popup, only show if the base map graphic is the event target
+	map.on('click', function(evt) { if (evt.target == query('svg#map_gc')[0]) {
+		var latitude = evt.mapPoint.getLatitude().toFixed(5);
+		var longitude = evt.mapPoint.getLongitude().toFixed(5);
+		map.infoWindow.setTitle("Map Location");
+		map.infoWindow.setContent('<p>Coordinates: ' + latitude + ', ' + longitude + '</p>');
+		map.infoWindow.show(evt.mapPoint, map.getInfoWindowAnchor(evt.screenPoint));
+	}});
 
 	// geolocation
 	if ('geolocation' in navigator) {
