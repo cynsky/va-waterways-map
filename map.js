@@ -78,9 +78,13 @@ require([
 			{ id: "bath", visible: false }),
 		// VDOT road projects
 		new FeatureLayer("http://gis.vdot.virginia.gov/arcgis/rest/services/varoads/VARoads/FeatureServer/1",
-			{ id: "road", visible: false })
+			{ id: "road", visible: false }),
+		// Current RIDGELINE Radar Data
+		new ArcGISDynamicMapServiceLayer("http://gis.srh.noaa.gov/arcgis/rest/services/RIDGERadar/MapServer",
+			{ id: "radar", visible: false })
 		]);
-	
+
+		
 	// geolocation
 	if ('geolocation' in navigator) {
 		navigator.geolocation.getCurrentPosition(function (pos) {
