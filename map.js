@@ -5,6 +5,7 @@ require([
 	"esri/layers/ArcGISTiledMapServiceLayer",
 	"esri/layers/FeatureLayer",
 	"esri/dijit/OverviewMap",
+	"esri/geometry/Point",
 	"dojo/domReady!"
 	], function(
 		Map,
@@ -12,7 +13,8 @@ require([
 		KMLLayer,
 		ArcGISTiledMapServiceLayer,
 		FeatureLayer,
-		OverviewMap) {
+		OverviewMap,
+		Point) {
 	window.map = new Map("map", {
 		basemap: "osm",
 		center: [-75.97086160156249, 37.89287113281247],
@@ -54,4 +56,11 @@ require([
 		new FeatureLayer("http://gis.vdot.virginia.gov/arcgis/rest/services/varoads/VARoads/FeatureServer/1",
 			{ id: "road", visible: false })
 		]);
+	
+	// geolocation
+	if ('geolocation' in navigator) {
+		navigator.geolocation.getCurrentPosition(function (pos) {
+			window.map.centerAt(new Point(pos.coords.longitude, pos.coords.latitude));
+		});
+	}
 });
