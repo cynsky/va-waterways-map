@@ -25,6 +25,8 @@ require([
 		zoom: 9
 	});
 
+
+
 	// loading spinner
 	var loadingTimeout = 0;
 	dojo.connect(map, "onUpdateStart", function() {
@@ -38,16 +40,23 @@ require([
 		query('#loading').style('display', 'none');
 	});
 
+
 	var overviewMapDijit = new OverviewMap({
 	    map: window.map,
-	    attachTo: "bottom-right",
+	    attachTo: "bottom-left",
 	    color:" #D84E13",
 	    opacity: .40,
-	    width: 250,
-	    height:250
-	});
+	    width: 240,
+	    height:240,
+	    visible: true
+	    
+	    });
+
 	overviewMapDijit.startup();
 	overviewMapDijit.show();
+
+
+	
 
 	// map layers
 	map.addLayers([
