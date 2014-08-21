@@ -5,6 +5,8 @@ require([
 	"esri/layers/ArcGISTiledMapServiceLayer",
 	"esri/layers/FeatureLayer",
 	"esri/dijit/OverviewMap",
+	"esri/geometry/Point",
+	"dojo/query",
 	"dojo/domReady!"
 	], function(
 		Map,
@@ -12,14 +14,31 @@ require([
 		KMLLayer,
 		ArcGISTiledMapServiceLayer,
 		FeatureLayer,
-		OverviewMap) {
+		OverviewMap,
+		Point,
+		query) {
 	window.map = new Map("map", {
 		basemap: "osm",
 		center: [-75.97086160156249, 37.89287113281247],
 		zoom: 9
 	});
 
+
 	var radar = new ArcGISDynamicMapServiceLayer("http://gis.srh.noaa.gov/arcgis/rest/services/RIDGERadar/MapServer");
+
+	// loading spinner
+	var loadingTimeout = 0;
+	dojo.connect(map, "onUpdateStart", function() {
+		clearTimeout(loadingTimeout);
+		loadingTimeout = setTimeout(function() {
+			query('#loading').style('display', 'inline');
+		}, 500);
+	});
+	dojo.connect(map, "onUpdateEnd", function() {
+		clearTimeout(loadingTimeout);
+		query('#loading').style('display', 'none');
+	});
+
 
 	var overviewMapDijit = new OverviewMap({
 	    map: window.map,
@@ -71,4 +90,11 @@ require([
 		new FeatureLayer("http://gis.vdot.virginia.gov/arcgis/rest/services/varoads/VARoads/FeatureServer/1",
 			{ id: "road", visible: false })
 		]);
+	
+	// geolocation
+	if ('geolocation' in navigator) {
+		navigator.geolocation.getCurrentPosition(function (pos) {
+			window.map.centerAndZoom(new Point(pos.coords.longitude, pos.coords.latitude), 12);
+		});
+	}
 });

@@ -8,8 +8,23 @@
 </head>
 <body>
 <div id="menuBar" class="border-box">
-	<button id="menuBtn">Layers</button>
+	<div id="menuRight">
+		<img src="ajax-loader.gif" id="loading">
+		<button id="menuBtn">Layers</button>
+	</div>
 	<h1>Virginia Waterways Trip Planner</h1>
+	<input id="search" type="text" placeholder="Jump to address...">
+</div>
+
+<div id="menu" class="border-box">
+<button data-layer="est-1">Estuaries</button>
+<button data-layer="est-0">Hospitals</button>
+<button data-layer="ramp">Boat Ramps</button>
+<button data-layer="imagery">Aerial Imagery</button>
+<button data-layer="localities">Localities</button>
+<button data-layer="nav">Navigation Charts</button>
+<button data-layer="bath">Bathymetry</button>
+<button data-layer="road">Road Projects</button>
 </div>
 
 <div id="map">
@@ -17,5 +32,6 @@
 <script src="http://js.arcgis.com/3.10compact"></script>
 <script src="map.js"></script>
 <script src="menu.js"></script>
+<script src="geocoding.js"></script>
 </body>
 </html>
