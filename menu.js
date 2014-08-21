@@ -19,14 +19,19 @@ function(query, domAttr) {
 });
 
 function showLayer(layerId) {
+	var parts = layerId.split("-");
 	for (var i in map.layerIds) {
 		var id = map.layerIds[i];
-		if (id == layerId) map.getLayer(id).show();
+		if (id == parts[0]) {
+			map.getLayer(id).show();
+			if (parts.length > 1)
+				map.getLayer(id).setVisibleLayers([parts[1]]);
+		}
 		else if (id != "layer0") map.getLayer(id).hide();
 	}
 	for (var i in map.graphicsLayerIds) {
 		var id = map.graphicsLayerIds[i];
-		if (id == layerId || id.indexOf(layerId) == 0) map.getLayer(id).show();
+		if (id == parts[0] || id.indexOf(parts[0]) == 0) map.getLayer(id).show();
 		else map.getLayer(id).hide();
 	}
 }
