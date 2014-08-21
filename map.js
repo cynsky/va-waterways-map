@@ -6,6 +6,7 @@ require([
 	"esri/layers/FeatureLayer",
 	"esri/dijit/OverviewMap",
 	"esri/geometry/Point",
+	"dojo/query",
 	"dojo/domReady!"
 	], function(
 		Map,
@@ -14,11 +15,25 @@ require([
 		ArcGISTiledMapServiceLayer,
 		FeatureLayer,
 		OverviewMap,
-		Point) {
+		Point,
+		query) {
 	window.map = new Map("map", {
 		basemap: "osm",
 		center: [-75.97086160156249, 37.89287113281247],
 		zoom: 9
+	});
+
+	// loading spinner
+	var loadingTimeout = 0;
+	dojo.connect(map, "onUpdateStart", function() {
+		clearTimeout(loadingTimeout);
+		loadingTimeout = setTimeout(function() {
+			query('#loading').style('display', 'inline');
+		}, 500);
+	});
+	dojo.connect(map, "onUpdateEnd", function() {
+		clearTimeout(loadingTimeout);
+		query('#loading').style('display', 'none');
 	});
 
 	var overviewMapDijit = new OverviewMap({
