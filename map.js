@@ -42,7 +42,7 @@ require([
 
 	var overviewMapDijit = new OverviewMap({
 	    map: window.map,
-	    baseLayer: radar,
+	    //baseLayer: radar,
 	    attachTo: "bottom-left",
 	    color:" #D84E13",
 	    opacity: .40,
@@ -52,15 +52,6 @@ require([
 	    
 	    });
 
-	
-	overviewMapDijit.startup();
-
-	overviewMapDijit.addLayers(
-		//locality boundaries
-		new ArcGISTiledMapServiceLayer("http://gismaps.vita.virginia.gov/arcgis/rest/services/VA_Base_layers/Virginia_Localities/MapServer",
-			{ id: "minloc", visible: true })
-
-		);
 
 
 
