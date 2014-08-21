@@ -7,6 +7,7 @@ require([
 	"esri/dijit/OverviewMap",
 	"esri/geometry/Point",
 	"esri/InfoTemplate",
+	"esri/geometry/webMercatorUtils",
 	"dojo/query",
 	"dojo/domReady!"
 	], function(
@@ -18,12 +19,26 @@ require([
 		OverviewMap,
 		Point,
 		InfoTemplate,
+		webMercatorUtils,
 		query) {
 	window.map = new Map("map", {
 		basemap: "osm",
 		center: [-75.97086160156249, 37.89287113281247],
 		zoom: 9
 	});
+	map.on("load", function() {
+          //after map loads, connect to listen to mouse move & drag events
+          map.on("mouse-move", showCoordinates);
+          map.on("mouse-drag", showCoordinates);
+        	});
+	function showCoordinates(evt) {
+          //the map is in web mercator but display coordinates in geographic (lat, long)
+          var mp = webMercatorUtils.webMercatorToGeographic(evt.mapPoint);
+          //var mp = evt.mapPoint;
+          //display mouse coordinates
+          //dom.byId("info").innerHTML = mp.x.toFixed(3) + ", " + mp.y.toFixed(3);
+          document.getElementById('coord').innerHTML = "Lat: <em>" + mp.y.toFixed(5) + "</em><br />Lon: <em>" + mp.x.toFixed(5) + "</em>";
+         	}
 
 	// loading spinner
 	var loadingTimeout = 0;
