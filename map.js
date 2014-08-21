@@ -4,12 +4,14 @@ require([
 	"esri/layers/ArcGISDynamicMapServiceLayer",
 	"esri/layers/KMLLayer",
 	"esri/layers/ArcGISTiledMapServiceLayer",
+	"esri/layers/FeatureLayer",
 	"dojo/domReady!"
 	], function(
 		Map,
 		ArcGISDynamicMapServiceLayer,
 		KMLLayer,
-		ArcGISTiledMapServiceLayer) {
+		ArcGISTiledMapServiceLayer,
+		FeatureLayer) {
 	window.map = new Map("map", {
 		basemap: "osm",
 		center: [-75.97086160156249, 37.89287113281247],
@@ -35,6 +37,9 @@ require([
 			{ id: "nav", visible: false }),
 		// bathymetry
 		new ArcGISDynamicMapServiceLayer("http://egisws02.nos.noaa.gov/ArcGIS/rest/services/Estuarine_Bathymetry/NOAA_Estuarine_Bathymetry/MapServer",
-			{ id: "bath", visible: true })
+			{ id: "bath", visible: false }),
+		// VDOT road projects
+		new FeatureLayer("http://gis.vdot.virginia.gov/arcgis/rest/services/varoads/VARoads/FeatureServer/1",
+			{ id: "road", visible: false })
 		]);
 });
