@@ -24,7 +24,6 @@ require([
 	});
 
 
-	var radar = new ArcGISDynamicMapServiceLayer("http://gis.srh.noaa.gov/arcgis/rest/services/RIDGERadar/MapServer");
 
 	// loading spinner
 	var loadingTimeout = 0;
@@ -42,7 +41,6 @@ require([
 
 	var overviewMapDijit = new OverviewMap({
 	    map: window.map,
-	    //baseLayer: radar,
 	    attachTo: "bottom-left",
 	    color:" #D84E13",
 	    opacity: .40,
@@ -52,7 +50,8 @@ require([
 	    
 	    });
 
-
+	overviewMapDijit.startup();
+	overviewMapDijit.show();
 
 
 	
