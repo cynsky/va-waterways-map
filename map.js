@@ -19,16 +19,33 @@ require([
 		zoom: 9
 	});
 
+	var radar = new ArcGISDynamicMapServiceLayer("http://gis.srh.noaa.gov/arcgis/rest/services/RIDGERadar/MapServer");
+
 	var overviewMapDijit = new OverviewMap({
 	    map: window.map,
+	    baseLayer: radar,
 	    attachTo: "bottom-right",
 	    color:" #D84E13",
 	    opacity: .40,
 	    width: 250,
-	    height:250
-	});
+	    height:250,
+	    visible: true
+	    
+	    });
+
+	
 	overviewMapDijit.startup();
-	overviewMapDijit.show();
+
+	overviewMapDijit.addLayers(
+		//locality boundaries
+		new ArcGISTiledMapServiceLayer("http://gismaps.vita.virginia.gov/arcgis/rest/services/VA_Base_layers/Virginia_Localities/MapServer",
+			{ id: "minloc", visible: true })
+
+		);
+
+
+
+	
 
 	// map layers
 	map.addLayers([
