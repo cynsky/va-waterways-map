@@ -75,7 +75,7 @@ require([
 	// geolocation
 	if ('geolocation' in navigator) {
 		navigator.geolocation.getCurrentPosition(function (pos) {
-			window.map.centerAt(new Point(pos.coords.longitude, pos.coords.latitude));
+			window.map.centerAndZoom(new Point(pos.coords.longitude, pos.coords.latitude), 12);
 		});
 	}
 });
