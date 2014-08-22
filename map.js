@@ -91,7 +91,7 @@ require([
 		new ArcGISDynamicMapServiceLayer("http://gis.srh.noaa.gov/arcgis/rest/services/RIDGERadar/MapServer",
 			{ id: "radar", visible: false, refreshInterval: 5 }),
 		// tide predictions
-		new KMLLayer("http://tonygambone.org/va-waterways-map/data/coops-tidepredictions_1.kmz",
+		new KMLLayer("http://tonygambone.org/va-waterways-map/data/coops-tidepredictions_2.kmz",
 			{ id: "tide", visible: false })
 		]);
 
