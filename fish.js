@@ -1,4 +1,5 @@
 // run addFishLayer(map) to render this
+// fish info is from https://github.com/opendata/Hunting-and-Fishing
 function addFishLayer(map) {
 require(
 	["dojo/_base/xhr", "dojo/_base/array", 
