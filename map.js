@@ -60,7 +60,7 @@ require([
 
 	overviewMapDijit.startup();
 	if ('matchMedia' in window) {
-		var mq = window.matchMedia('(max-width: 600px)');
+		var mq = window.matchMedia('(max-width: 600px) and (orientation: portrait)');
 		if (mq.matches) overviewMapDijit.hide(); else overviewMapDijit.show();
 		mq.addListener(function(evt) {
 			if (mq.matches) overviewMapDijit.hide(); else overviewMapDijit.show();
