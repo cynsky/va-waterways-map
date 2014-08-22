@@ -117,7 +117,7 @@ require([
 	map.getLayer("road").infoTemplate = roadTemplate;
 
 	// default popup, only show if the base map graphic is the event target
-	map.on('click', function(evt) { if (evt.target.id == 'map_gc' /* not IE */ || evt.target.id.indexOf('map_layer0') == 0 /* IE */) {
+	map.on('click', function(evt) { console && console.log(evt.target.id); if (evt.target.id == 'map_gc' /* not IE */ || evt.target.id.indexOf('map_layer0') == 0 /* IE */) {
 		var latitude = evt.mapPoint.getLatitude().toFixed(5);
 		var longitude = evt.mapPoint.getLongitude().toFixed(5);
 		var sunTimes = getSunTimes(latitude, longitude);
