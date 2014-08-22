@@ -1,0 +1,94 @@
+[
+{
+	"state": "Virginia",
+	"agency": "Department of Game and Inland Fisheries",
+	"date_effective": "2013-07-01",
+	"date_expires": "2014-06-30",
+	"schema": "",
+	"schema_version": "1.0a",
+	"documentation": "",
+	"species": {
+		"name": "Largemouth Bass",
+		"taxonomy": "Micropterus salmoides",
+		"bova_id": 10188,
+		"images": [
+			{
+				"url": "http://www.dgif.virginia.gov/wildlife/fish/images/010188.jpg",
+				"credit": "Duane Raver, U.S. Fish and Wildlife Service"
+			}
+		],
+		"aliases": ["Black bass", "bigmouth"],
+		"identification": "Sunfish family. Basically dark greenish above fading to a whitish belly, but variable depending on the water it lives in. Shows a series of dark blotches that form a dark horizontal band along its midline to its tail. Named because of its big mouth. Upper jaw extends well beyond the eye. Dorsal fin deeply notched. Average weight is 2 to 4 lbs., with up to 10 lbs. occurring in some waters."
+	},
+	"limits": {
+		"creel": {
+			"number": 5
+		},
+		"length": {
+			"unit": null,
+			"maximum": null
+		},
+		"exceptions": {
+			"1": {
+				"places": {
+					"Briery Creek Lake": {
+						"gnis_id": TK
+					}
+				},
+				"description": "No bass 16 to 24 inches, only 1 per day longer than 24 inches"
+			},
+			"2": {
+				"places": {
+					"Buggs Island": {
+						"gnis_id": TK
+					}
+				},
+				"description": "Only 2 of 5 bass less than 14 inches"
+			}
+		}
+	},
+	"best_fishing": {
+		"lakes": {
+			"Anna": {
+				"gnis_id": 1501942
+			},
+			"Gaston": {
+				"gnis_id": 1500911
+			},
+			"Buggs Island": {},
+			"Chickahominy": {
+				"gnis_id": 1478078
+			},
+			"Chesdin": {
+				"gnis_id": 1474230
+			},
+			"Smith Mountain": {
+				"gnis_id": 1502131
+			},
+			"Prince": {
+				"gnis_id": 1502102
+			},
+			"Briery Creek": {},
+			"Sandy River": {},
+			"Western Branch": {
+				"gnis_id": 1479861
+			},
+			"Witten": {},
+			"Flannagan": {
+				"gnis_id": 1484463
+			}
+		},
+		"rivers": {
+			"Chickahominy": {
+				"gnis_id": 1478374,
+				"comment": "below Walkers Dam"
+			},
+			"James": {
+				"gnis_id": 1488853,
+				"comment": "below the fall line"
+			}
+		}
+	},
+	"fishing_techniques": "Fly, medium spincasting, spinning or baitcasting rods and reels can all be used. Plastic worms and other plastic imitations, crankbaits, spinner baits, surface lures, jigs and other lures imitating minnows, crayfish, frogs, salamanders and nightcrawlers. For flyrodders, streamer flies, bucktails and large poppers. Live bait includes small bluegills, minnows of many kinds, crayfish, nightcrawlers, frogs, etc."
+}
+]
