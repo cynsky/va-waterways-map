@@ -67,7 +67,7 @@ require([
 			{ id: "hosp", visible: false, outFields: ["HOSP_NAME", "PHYS_ST_1", "PHYS_CITY", "WEBSITE"] }),
 		// estuaries
 		new FeatureLayer("http://deq.virginia.gov/arcgis/rest/services/staff/Estuaries_2012/MapServer/1",
-			{ id: "est", visible: false, outFields: ["WATER_NAME", "LOCATION", "AQUA_LIFE", "FISH_CONSU", "RECREATION", "SHELLFISH"] }),
+			{ id: "est", visible: false, outFields: ["WATER_NAME", "LOCATION", "AQUA_LIFE", "FISH_CONSU", "RECREATION", "SHELLFISH", "ID305B"] }),
 		// boat ramps
 		new KMLLayer("http://tonygambone.org/va-waterways-map/data/DGIF_Boating_Access_Sites_custom_2.kmz",
 			{ id: "ramp", visible: false }),
@@ -94,7 +94,7 @@ require([
 	// popups
 	var estTemplate = new InfoTemplate();
 	estTemplate.setTitle("Estuary Segment");
-	estTemplate.setContent('<p><strong>${WATER_NAME}</strong></p><p>${LOCATION}</p><ul class="infoTemplate"><li><strong>Aquatic Life:</strong> ${AQUA_LIFE}</li><li><strong>Fish Consumption:</strong> ${FISH_CONSU}</li><li><strong>Recreation:</strong> ${RECREATION}</li><li><strong>Shellfish:</strong> ${SHELLFISH}</li>');
+	estTemplate.setContent('<p><strong>${WATER_NAME}</strong></p><p>${LOCATION}</p><ul class="infoTemplate"><li><strong>Aquatic Life:</strong> ${AQUA_LIFE}</li><li><strong>Fish Consumption:</strong> ${FISH_CONSU}</li><li><strong>Recreation:</strong> ${RECREATION}</li><li><strong>Shellfish:</strong> ${SHELLFISH}</li><a href=http://www.deq.virginia.gov/FS2012/FactSheets.aspx?id=${ID305B}&style=1 target=_blank >Fact Sheet</a>');
 	map.getLayer("est").infoTemplate = estTemplate;
 	var hospTemplate = new InfoTemplate();
 	hospTemplate.setTitle("Hospital");
