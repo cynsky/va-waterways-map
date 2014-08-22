@@ -8,5 +8,4 @@ html,body { height: 100%; margin: 0; padding: 0; font-family: sans-serif; }
 #menuRight { float: right; }
 #loading { display: none; }
 #search { width: 250px; }
-#coord {position:absolute; left:75px; top:15px; color:#000; z-index:50;background-color: #FFFFFF; margin:8px; padding: 8px; border: solid 1px #000000; display: none; }
 ul.infoTemplate { margin-left: 0; padding-left: 0; }
