@@ -113,8 +113,13 @@ require([
 	map.on('click', function(evt) { if (evt.target == query('svg#map_gc')[0]) {
 		var latitude = evt.mapPoint.getLatitude().toFixed(5);
 		var longitude = evt.mapPoint.getLongitude().toFixed(5);
+		var sunTimes = getSunTimes(latitude, longitude);
+		var moonPhase = getMoonPhase();
 		map.infoWindow.setTitle("Map Location");
-		map.infoWindow.setContent('<p>Coordinates: ' + latitude + ', ' + longitude + '</p>');
+		map.infoWindow.setContent('<p><strong>Coordinates:</strong> ' + latitude + ', ' + longitude + '<br>' +
+								'<strong>Sunrise:</strong> ' + moment(sunTimes.sunrise).format('h:mm a') + '<br>' +
+								'<strong>Sunset:</strong> ' + moment(sunTimes.sunset).format('h:mm a') + '<br>' + 
+								'<strong>Moon Phase:</strong> ' + moonPhase + '</p>');
 		map.infoWindow.show(evt.mapPoint, map.getInfoWindowAnchor(evt.screenPoint));
 	}});
 
