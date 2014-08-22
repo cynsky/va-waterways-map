@@ -19,6 +19,7 @@ require([
 		OverviewMap,
 		Point,
 		InfoTemplate,
+		webMercatorUtils,
 		query) {
 	window.map = new Map("map", {
 		basemap: "osm",
