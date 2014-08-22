@@ -35,6 +35,10 @@ require([
 		}
 	})
 
+	// moon phase
+	var moonPhase = getMoonPhase();
+	query('#moonimg').attr('src', 'images/' + moonPhase + '.png').attr('title', moonPhase);
+
 	// loading spinner
 	var loadingTimeout = 0;
 	dojo.connect(map, "onUpdateStart", function() {
@@ -122,13 +126,11 @@ require([
 		var latitude = evt.mapPoint.getLatitude().toFixed(5);
 		var longitude = evt.mapPoint.getLongitude().toFixed(5);
 		var sunTimes = getSunTimes(latitude, longitude);
-		var moonPhase = getMoonPhase();
 		map.infoWindow.setTitle("Map Location");
 		findClosestWeatherStation(latitude, longitude, function(closest) {
 			map.infoWindow.setContent('<p><strong>Coordinates:</strong> ' + latitude + ', ' + longitude + '<br>' +
 								'<strong>Sunrise:</strong> ' + moment(sunTimes.sunrise).format('h:mm a') + '<br>' +
-								'<strong>Sunset:</strong> ' + moment(sunTimes.sunset).format('h:mm a') + '<br>' + 
-								'<strong>Moon Phase:</strong> ' + moonPhase + '</p>' +
+								'<strong>Sunset:</strong> ' + moment(sunTimes.sunset).format('h:mm a') + '<br>' +
 								'<p><strong>Weather Info:</strong> <a href="http://tidesandcurrents.noaa.gov/stationhome.html?id=' + closest.stationId + '#obs" target="_blank">Visit site</a></p>');
 		});
 		// show spinner initially
