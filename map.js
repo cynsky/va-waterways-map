@@ -96,7 +96,7 @@ require([
 			{ id: "road", visible: false }),
 		// Current RIDGELINE Radar Data
 		new ArcGISDynamicMapServiceLayer("http://gis.srh.noaa.gov/arcgis/rest/services/RIDGERadar/MapServer",
-			{ id: "radar", visible: false })
+			{ id: "radar", visible: false, refreshInterval: 5 })
 		]);
 
 	// popups
