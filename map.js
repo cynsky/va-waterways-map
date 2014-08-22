@@ -41,6 +41,13 @@ require([
           document.getElementById('coord').innerHTML = "Lat: <em>" + mp.y.toFixed(5) + "</em><br />Lon: <em>" + mp.x.toFixed(5) + "</em>";
          	}
 
+	// save center & zoom
+	map.on('extent-change', function (obj) {
+		if ('localStorage' in window) {
+			localStorage['deq.extent'] = JSON.stringify({ center: obj.extent.getCenter(), zoom: map.getZoom() });
+		}
+	})
+
 	// loading spinner
 	var loadingTimeout = 0;
 	dojo.connect(map, "onUpdateStart", function() {
@@ -127,8 +134,13 @@ require([
 		map.infoWindow.show(evt.mapPoint, map.getInfoWindowAnchor(evt.screenPoint));
 	}});
 
-	// geolocation
-	if ('geolocation' in navigator) {
+	// restore saved position or set geolocated position
+	if ('localStorage' in window && localStorage['deq.extent'] != null) {
+		try {
+			var extent = JSON.parse(localStorage['deq.extent']);
+			map.centerAndZoom(extent.center, extent.zoom);
+		} catch (e) { localStorage.remove('deq.extent'); }
+	} else if ('geolocation' in navigator) {
 		navigator.geolocation.getCurrentPosition(function (pos) {
 			window.map.centerAndZoom(new Point(pos.coords.longitude, pos.coords.latitude), 12);
 		});
