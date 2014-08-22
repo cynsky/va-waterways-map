@@ -84,7 +84,7 @@ require([
 		new FeatureLayer("http://deq.virginia.gov/arcgis/rest/services/staff/Estuaries_2012/MapServer/1",
 			{ id: "est", visible: false, outFields: ["WATER_NAME", "LOCATION", "AQUA_LIFE", "FISH_CONSU", "RECREATION", "SHELLFISH"] }),
 		// boat ramps
-		new KMLLayer("http://www.dgif.virginia.gov/gis/kmz/DGIF_Boating_Access_Sites.kmz",
+		new KMLLayer("http://tonygambone.org/va-waterways-map/data/DGIF_Boating_Access_Sites_custom_2.kmz",
 			{ id: "ramp", visible: false }),
 		// imagery
 		new ArcGISTiledMapServiceLayer("http://gismaps.vita.virginia.gov/arcgis/rest/services/MostRecentImagery/MostRecentImagery_WGS/MapServer",
