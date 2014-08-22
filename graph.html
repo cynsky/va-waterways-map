@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      google.load('visualization', '1.1', {packages: ['barchart']});
+    </script>
+    <script type="text/javascript">
+      function drawVisualization() {
+        // Create and populate the data table.
+	URL = "http://tidesandcurrents.noaa.gov/api/datagetter?begin_date=20140821%2010:00&end_date=20140821%2010:24&station=8638863&product=air_temperature&datum=mllw&units=metric&time_zone=gmt&application=VADEQ&format=json";
+
+URL2 = "http://tidesandcurrents.noaa.gov/api/datagetter?begin_date=20140821%2010:00&end_date=20140821%2010:24&station=8638863&product=water_temperature&datum=mllw&units=metric&time_zone=gmt&application=VADEQ&format=json";
+
+URL3 = "http://tidesandcurrents.noaa.gov/api/datagetter?begin_date=20140821%2010:00&end_date=20140821%2010:24&station=8638863&product=air_pressure&datum=mllw&units=metric&time_zone=gmt&application=VADEQ&format=json";
+
+        $.post(URL, null,
+ 	    function(outData, textStatus, jqXHR)
+            {
+	       var result = jQuery.parseJSON(outData);
+console.log(result);
+               var data = new google.visualization.DataTable();
+               data.addColumn('string', 'Date');
+               data.addColumn('number', 'Temperature');
+               data.addRows(result.data.length);
+	       
+               $.each(result.data,function (key,value) {
+  		   data.setValue(key, 0, value.t);
+		   data.setValue(key, 1, value.v);
+	       });
+
+               chart = new google.visualization.LineChart                  (document.getElementById('visualization1'));
+               chart.draw(data, {width: 400, height: 240, title: 'Air temperature',
+                   vAxis: {title: 'Year', titleTextStyle: {color: 'red'}}
+               });
+
+ 	 }); // post callback
+
+        $.post(URL2, null,
+ 	    function(outData, textStatus, jqXHR)
+            {
+	       var result = jQuery.parseJSON(outData);
+console.log(result);
+
+               var data = new google.visualization.DataTable();
+               data.addColumn('string', 'Date');
+               data.addColumn('number', 'Pressure');
+               data.addRows(result.data.length);
+	       
+               $.each(result.data,function (key,value) {
+  		   data.setValue(key, 0, value.t);
+		   data.setValue(key, 1, value.v);
+	       });
+
+               chart = new google.visualization.LineChart                  (document.getElementById('visualization2'));
+               chart.draw(data, {width: 400, height: 240, title: 'Water temperature',
+                   vAxis: {title: 'Year', titleTextStyle: {color: 'red'}}
+               });
+
+ 	 }); // post callback
+
+        $.post(URL3, null,
+ 	    function(outData, textStatus, jqXHR)
+            {
+	       var result = jQuery.parseJSON(outData);
+console.log(result);
+
+               var data = new google.visualization.DataTable();
+               data.addColumn('string', 'Date');
+               data.addColumn('number', 'Temperature');
+               data.addRows(result.data.length);
+	       
+               $.each(result.data,function (key,value) {
+  		   data.setValue(key, 0, value.t);
+		   data.setValue(key, 1, value.v);
+	       });
+
+               chart = new google.visualization.LineChart                  (document.getElementById('visualization3'));
+               chart.draw(data, {width: 400, height: 240, title: 'Air pressure',
+                   vAxis: {title: 'Year', titleTextStyle: {color: 'red'}}
+               });
+
+ 	 }); // post callback
+
+      }
+      google.setOnLoadCallback(drawVisualization);
+    </script>
+  </head>
+  <body>
+    <div id="visualization1" style="width: 600px; height: 400px;"></div>
+    <div id="visualization2" style="width: 600px; height: 400px;"></div>
+    <div id="visualization3" style="width: 600px; height: 400px;"></div>
+  </body>
+</html>
