@@ -16,6 +16,10 @@ function(query, domAttr) {
 		query('#menu').style('display', 'none');
 		menuShown = false;
 	});
+
+	query('button[data-layer=radar').connect('onclick', function() {
+		if (map.getZoom() > 9) map.setZoom(9);
+	})
 });
 
 function showLayer(layerId) {
