@@ -128,8 +128,7 @@ require([
 								'<strong>Sunrise:</strong> ' + moment(sunTimes.sunrise).format('h:mm a') + '<br>' +
 								'<strong>Sunset:</strong> ' + moment(sunTimes.sunset).format('h:mm a') + '<br>' + 
 								'<strong>Moon Phase:</strong> ' + moonPhase + '</p>' +
-								'<p><strong>Closest Weather Station:</strong> ' + closest.stationId + '<br>' +
-								'<strong>Distance to Weather Station:</strong> ' + closest.distance.toFixed(2) + ' miles</p>');
+								'<p><strong>Weather Info:</strong> <a href="http://tidesandcurrents.noaa.gov/stationhome.html?id=' + closest.stationId + '#obs" target="_blank">Visit site</a></p>');
 		});
 		// show spinner initially
 		map.infoWindow.setContent('<div style="text-align: center;"><img src="ajax-loader.gif"></div>');
