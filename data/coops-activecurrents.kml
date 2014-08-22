@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <ScreenOverlay>
+      <name />
+      <Icon>
+        <href>http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png</href>
+      </Icon>
+      <overlayXY x="1" y="0" xunits="fraction" yunits="fraction" />
+      <screenXY x=".82" y="30" xunits="fraction" yunits="pixels" />
+      <rotationXY x="0" y="0" xunits="pixels" yunits="pixels" />
+      <size x="0" y="0" xunits="pixels" yunits="pixels" />
+    </ScreenOverlay>
+    <Style id="default">
+      <BalloonStyle>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+    <Style id="activecurrents">
+      <IconStyle>
+        <Icon>
+          <href>http://tidesandcurrents.noaa.gov/cdata//icons/markerBlue.png</href>
+        </Icon>
+        <scale>1.5</scale>
+      </IconStyle>
+      <BalloonStyle>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+    <name>CO-OPS Active Current Stations</name>
+    <Placemark>
+      <name>Cape Henry LB 2CH</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Cape Henry LB 2CH&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cb0102&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chesapeake Bay South PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cb0102'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-76.01302,36.95922</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Thimble Shoal LB 18</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Thimble Shoal LB 18&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cb0301&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chesapeake Bay South PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cb0301'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-76.24948,37.0111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Naval Station Norfolk LB 7</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Naval Station Norfolk LB 7&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cb0402&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chesapeake Bay South PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cb0402'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-76.33387,36.96238</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Newport News Channel LB 14</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Newport News Channel LB 14&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cb0601&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chesapeake Bay South PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cb0601'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-76.41448,36.95602</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dominion Terminal</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Dominion Terminal&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cb0701&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chesapeake Bay South PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cb0701'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-76.42417,36.96233</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Rappahannock Shoal Channel LBB 60</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Rappahannock Shoal Channel LBB 60&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cb0801&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chesapeake Bay North PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cb0801'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-76.15453,37.67438</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Potomac River MidChannel LWB B</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Potomac River MidChannel LWB B&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cb0901&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chesapeake Bay North PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cb0901'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-76.53068,38.1149</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cove Point LNG Pier</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Cove Point LNG Pier&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cb1001&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chesapeake Bay North PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cb1001'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-76.38417,38.40283</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chesapeake Channel LBB 92</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Chesapeake Channel LBB 92&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cb1101&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chesapeake Bay North PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cb1101'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-76.38467,38.98215</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tolchester Front Range</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Tolchester Front Range&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cb1201&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chesapeake Bay North PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cb1201'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-76.33035,39.13987</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chesapeake City</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Chesapeake City&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cb1301&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chesapeake Bay North PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cb1301'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-75.82762,39.53053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cherry Point</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Cherry Point&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;cp0101&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Cherry Point PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=cp0101'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-122.761,48.8628</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Philadelphia</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Philadelphia&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;db0301&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Delaware Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=db0301'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-75.1396,39.94623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Galveston Bay Entr Channel LB 11</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Galveston Bay Entr Channel LB 11&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;g06010&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Houston/Galveston PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=g06010'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-94.74083,29.34222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cuyahoga River</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Cuyahoga River&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;gl0101&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Great Lakes Real-Time Currents Monitoring&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=gl0101'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-81.70292,41.49448</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Maumee River</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Maumee River&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;gl0201&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Great Lakes Real-Time Currents Monitoring&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=gl0201'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-83.53022,41.62913</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>St Clair River</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;St Clair River&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;gl0301&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Great Lakes Real-Time Currents Monitoring&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=gl0301'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-82.42527,42.99873</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Hookton Channel Day Marker 5</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Hookton Channel Day Marker 5&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;hb0301&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Humboldt Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=hb0301'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-124.22506,40.74233</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chevron Pier</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Chevron Pier&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;hb0401&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Humboldt Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=hb0401'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-124.19661,40.7775</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>St Johns River LBB 6</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;St Johns River LBB 6&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;jx0101&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Jacksonville PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=jx0101'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-81.37637,30.39994</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mayport Basin PC LBB</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Mayport Basin PC LBB&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;jx0201&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Jacksonville PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=jx0201'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-81.39469,33.39889</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mile Point LB 24</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Mile Point LB 24&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;jx0301&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Jacksonville PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=jx0301'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-81.46111,30.38275</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Fulton Cutoff LB 34</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Fulton Cutoff LB 34&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;jx0401&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Jacksonville PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=jx0401'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-81.49678,30.39097</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dames Point Bridge</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Dames Point Bridge&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;jx0501&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Jacksonville PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=jx0501'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-81.55786,30.38599</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Trout River Cut LB 64</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Trout River Cut LB 64&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;jx0601&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Jacksonville PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=jx0601'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-81.62594,30.39103</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Acosta Bridge</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Acosta Bridge&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;jx0701&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Jacksonville PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=jx0701'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-81.66462,30.32266</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Calcasieu Channel LB 36</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Calcasieu Channel LB 36&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;lc0101&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Lake Charles PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=lc0101'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-93.33118,29.69347</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cameron Fishing Pier</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Cameron Fishing Pier&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;lc0201&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Lake Charles PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=lc0201'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-93.34292,29.76414</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lake Charles City Docks</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Lake Charles City Docks&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;lc0301&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Lake Charles PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=lc0301'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-93.24944,30.21783</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>First Street Wharf</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;First Street Wharf&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;lm0101&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Lower Mississippi River PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=lm0101'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-90.07114,29.92244</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Port Allen</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Port Allen&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;lm0201&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Lower Mississippi River PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=lm0201'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-91.20056,30.43547</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mobile Bay Buoy M</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Mobile Bay Buoy M&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;mb0101&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Mobile Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=mb0101'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-88.0687,30.1253</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mobile State Dock Pier E</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Mobile State Dock Pier E&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;mb0301&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Mobile Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=mb0301'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-88.04278,30.72111</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Narrows</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;The Narrows&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;n03020&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;New York/New Jersey PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=n03020'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-74.03854,40.60655</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Gowanus Flats LBB 32</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Gowanus Flats LBB 32&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;n05010&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;New York/New Jersey PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=n05010'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-74.03993,40.67207</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Fall River</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Fall River&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;nb0201&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Narragansett Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=nb0201'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-71.17842,41.6999</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Quonset Point</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Quonset Point&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;nb0301&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Narragansett Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=nb0301'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-71.397,41.58367</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Groton, Thames River, Pier 6</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Groton, Thames River, Pier 6&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;nl0101&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;New London PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=nl0101'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-72.09236,41.39172</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Northrop Grumman Pier</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Northrop Grumman Pier&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;ps0301&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Pascagoula PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=ps0301'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-88.56406,30.35978</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pascagoula Harbor LB 10</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Pascagoula Harbor LB 10&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;ps0401&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Pascagoula PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=ps0401'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-88.52237,30.19576</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Martinez-AMORCO Pier</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Martinez-AMORCO Pier&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;s06010&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;San Francisco Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=s06010'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-122.12525,38.03463</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Southampton Shoal Channel LB 6</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Southampton Shoal Channel LB 6&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;s08010&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;San Francisco Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=s08010'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-122.42233,37.91625</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Oakland Outer Harbor LB3</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Oakland Outer Harbor LB3&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;s09010&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;San Francisco Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=s09010'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-122.34434,37.8082</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sabine Bank Channel LBB 34</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Sabine Bank Channel LBB 34&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;sn0101&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Sabine Neches PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=sn0101'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-93.81615,29.62892</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>USCG Sabine</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;USCG Sabine&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;sn0201&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Sabine Neches PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=sn0201'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-93.87001,29.72861</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sabine Front Range</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Sabine Front Range&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;sn0301&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Sabine Neches PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=sn0301'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-93.89012,29.75086</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>West Port Arthur Bridge</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;West Port Arthur Bridge&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;sn0401&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Sabine Neches PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=sn0401'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-93.96417,29.82389</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Rainbow Bridge</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Rainbow Bridge&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;sn0501&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Sabine Neches PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=sn0501'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-93.87058,29.97948</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Port of Beaumont</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Port of Beaumont&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;sn0601&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Sabine Neches PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=sn0601'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-94.08625,30.0797</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Port Arthur</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Port Arthur&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;sn0701&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Sabine Neches PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=sn0701'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-93.93111,29.86708</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sunshine Skyway Bridge</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Sunshine Skyway Bridge&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;t01010&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Tampa Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=t01010'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-82.655,27.625</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Old Port Tampa</name>
+      <description xmlns="">&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;
+   &lt;td rowspan='2'&gt;&lt;img src='http://tidesandcurrents.noaa.gov/cdata//icons/noaalogosmall.png'/&gt;&lt;/td&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;NOAA/NOS/CO-OPS&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style='font-size: 12px;'&gt;&lt;b&gt;Old Port Tampa&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Station ID:&lt;/b&gt;&lt;/td&gt;&lt;td width='100px'&gt;t02010&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Data Type:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Currents&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='100px'&gt;&lt;b&gt;Project:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Tampa Bay PORTS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr style='text-align: right;' color='#E0E0E0'/&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href='http://tidesandcurrents.noaa.gov/cdata/StationInfo?id=t02010'&gt;more info&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+      <styleUrl>#activecurrents</styleUrl>
+      <Point>
+        <coordinates>-82.55373,27.86287</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
