@@ -26,20 +26,6 @@ require([
 		center: [-75.97086160156249, 37.89287113281247],
 		zoom: 9
 	});
-	map.on("load", function() {
-          //after map loads, connect to listen to mouse move & drag events
-          map.on("mouse-move", showCoordinates);
-          map.on("mouse-drag", showCoordinates);
-        	});
-	function showCoordinates(evt) {
-          //the map is in web mercator but display coordinates in geographic (lat, long)
-          var mp = webMercatorUtils.webMercatorToGeographic(evt.mapPoint);
-          //var mp = evt.mapPoint;
-          //display mouse coordinates
-          //dom.byId("info").innerHTML = mp.x.toFixed(3) + ", " + mp.y.toFixed(3);
-          document.getElementById('coord').style.display = 'block';
-          document.getElementById('coord').innerHTML = "Lat: <em>" + mp.y.toFixed(5) + "</em><br />Lon: <em>" + mp.x.toFixed(5) + "</em>";
-         	}
 
 	// save center & zoom
 	map.on('extent-change', function (obj) {
@@ -66,8 +52,8 @@ require([
 	    attachTo: "bottom-left",
 	    color:" #D84E13",
 	    opacity: .40,
-	    width: 240,
-	    height:240,
+	    width: 200,
+	    height:200,
 	    visible: true
 	    
 	    });
@@ -82,7 +68,7 @@ require([
 			{ id: "hosp", visible: false, outFields: ["HOSP_NAME", "PHYS_ST_1", "PHYS_CITY", "WEBSITE"] }),
 		// estuaries
 		new FeatureLayer("http://deq.virginia.gov/arcgis/rest/services/staff/Estuaries_2012/MapServer/1",
-			{ id: "est", visible: false, outFields: ["WATER_NAME", "LOCATION", "AQUA_LIFE", "FISH_CONSU", "RECREATION", "SHELLFISH"] }),
+			{ id: "est", visible: false, outFields: ["WATER_NAME", "LOCATION", "AQUA_LIFE", "FISH_CONSU", "RECREATION", "SHELLFISH", "ID305B"] }),
 		// boat ramps
 		new KMLLayer("http://tonygambone.org/va-waterways-map/data/DGIF_Boating_Access_Sites_custom_2.kmz",
 			{ id: "ramp", visible: false }),
@@ -109,7 +95,7 @@ require([
 	// popups
 	var estTemplate = new InfoTemplate();
 	estTemplate.setTitle("Estuary Segment");
-	estTemplate.setContent('<p><strong>${WATER_NAME}</strong></p><p>${LOCATION}</p><ul class="infoTemplate"><li><strong>Aquatic Life:</strong> ${AQUA_LIFE}</li><li><strong>Fish Consumption:</strong> ${FISH_CONSU}</li><li><strong>Recreation:</strong> ${RECREATION}</li><li><strong>Shellfish:</strong> ${SHELLFISH}</li>');
+	estTemplate.setContent('<p><strong>${WATER_NAME}</strong></p><p>${LOCATION}</p><ul class="infoTemplate"><li><strong>Aquatic Life:</strong> ${AQUA_LIFE}</li><li><strong>Fish Consumption:</strong> ${FISH_CONSU}</li><li><strong>Recreation:</strong> ${RECREATION}</li><li><strong>Shellfish:</strong> ${SHELLFISH}</li><a href=http://www.deq.virginia.gov/FS2012/FactSheets.aspx?id=${ID305B}&style=1 target=_blank >Fact Sheet</a>');
 	map.getLayer("est").infoTemplate = estTemplate;
 	var hospTemplate = new InfoTemplate();
 	hospTemplate.setTitle("Hospital");
