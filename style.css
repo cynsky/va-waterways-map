@@ -9,3 +9,8 @@ html,body { height: 100%; margin: 0; padding: 0; font-family: sans-serif; }
 #loading { display: none; }
 #search { width: 250px; }
 ul.infoTemplate { margin-left: 0; padding-left: 0; }
+
+@media (max-width: 600px) {
+	#menuBar { height: 58px; }
+	#menu, #map { top: 58px; }
+}
