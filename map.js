@@ -127,10 +127,16 @@ require([
 		var sunTimes = getSunTimes(latitude, longitude);
 		var moonPhase = getMoonPhase();
 		map.infoWindow.setTitle("Map Location");
-		map.infoWindow.setContent('<p><strong>Coordinates:</strong> ' + latitude + ', ' + longitude + '<br>' +
+		findClosestWeatherStation(latitude, longitude, function(closest) {
+			map.infoWindow.setContent('<p><strong>Coordinates:</strong> ' + latitude + ', ' + longitude + '<br>' +
 								'<strong>Sunrise:</strong> ' + moment(sunTimes.sunrise).format('h:mm a') + '<br>' +
 								'<strong>Sunset:</strong> ' + moment(sunTimes.sunset).format('h:mm a') + '<br>' + 
-								'<strong>Moon Phase:</strong> ' + moonPhase + '</p>');
+								'<strong>Moon Phase:</strong> ' + moonPhase + '</p>' +
+								'<p><strong>Closest Weather Station:</strong> ' + closest.stationId + '<br>' +
+								'<strong>Distance to Weather Station:</strong> ' + closest.distance.toFixed(2) + ' miles</p>');
+		});
+		// show spinner initially
+		map.infoWindow.setContent('<div style="text-align: center;"><img src="ajax-loader.gif"></div>');
 		map.infoWindow.show(evt.mapPoint, map.getInfoWindowAnchor(evt.screenPoint));
 	}});
 
