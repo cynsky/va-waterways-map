@@ -101,13 +101,16 @@ require([
 	// popups
 	var estTemplate = new InfoTemplate();
 	estTemplate.setTitle("Estuary Segment");
-	estTemplate.setContent('<p><strong>${WATER_NAME}</strong></p><p>${LOCATION}</p><ul class="infoTemplate"><li><strong>Aquatic Life:</strong> ${AQUA_LIFE}</li><li><strong>Fish Consumption:</strong> ${FISH_CONSU}</li><li><strong>Recreation:</strong> ${RECREATION}</li><li><strong>Shellfish:</strong> ${SHELLFISH}</li>')
+	estTemplate.setContent('<p><strong>${WATER_NAME}</strong></p><p>${LOCATION}</p><ul class="infoTemplate"><li><strong>Aquatic Life:</strong> ${AQUA_LIFE}</li><li><strong>Fish Consumption:</strong> ${FISH_CONSU}</li><li><strong>Recreation:</strong> ${RECREATION}</li><li><strong>Shellfish:</strong> ${SHELLFISH}</li>');
+	map.getLayer("est").infoTemplate = estTemplate;
 	var hospTemplate = new InfoTemplate();
 	hospTemplate.setTitle("Hospital");
 	hospTemplate.setContent('<p><strong>${HOSP_NAME}</strong></p><p>${PHYS_ST_1}<br>${PHYS_CITY}</p>${WEBSITE:formatWebsite}');
-
 	map.getLayer("hosp").infoTemplate = hospTemplate;
-	map.getLayer("est").infoTemplate = estTemplate;
+	var roadTemplate = new InfoTemplate();
+	roadTemplate.setTitle("Road Project");
+	roadTemplate.setContent('<p><strong>Status:</strong> ${PROJECT_PHASE:formatProjectPhase}</p>');
+	map.getLayer("road").infoTemplate = roadTemplate;
 
 	// default popup, only show if the base map graphic is the event target
 	map.on('click', function(evt) { if (evt.target == query('svg#map_gc')[0]) {
@@ -135,4 +138,12 @@ var formatWebsite = function(value, key, data) {
 	if (!value || value.length == 0) return "";
 	if (value.indexOf("http") != 0) { value = "http://" + value; }
 	return '<p><a href="' + value + '" target="_blank">Visit website</a></p>';
+};
+
+var formatProjectPhase = function(value, key, data) {
+	var parts = value.split(" ");
+	for (var i in parts) {
+		parts[i] = parts[i].substring(0,1) + parts[i].substring(1).toLowerCase();
+	}
+	return parts.join(" ");
 };
