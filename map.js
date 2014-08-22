@@ -37,6 +37,7 @@ require([
           //var mp = evt.mapPoint;
           //display mouse coordinates
           //dom.byId("info").innerHTML = mp.x.toFixed(3) + ", " + mp.y.toFixed(3);
+          document.getElementById('coord').style.display = 'block';
           document.getElementById('coord').innerHTML = "Lat: <em>" + mp.y.toFixed(5) + "</em><br />Lon: <em>" + mp.x.toFixed(5) + "</em>";
          	}
 
