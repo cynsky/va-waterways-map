@@ -16,3 +16,5 @@ ul.infoTemplate { margin-left: 0; padding-left: 0; }
 	#menuBar { height: 58px; }
 	#menu, #map { top: 58px; }
 }
+
+.helpquestions {color:#990000;font-weight: bold; font-style: italic;}
