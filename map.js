@@ -63,14 +63,37 @@ require([
 	    
 	    });
 
+	var isMobile = {
+	    Android: function() {
+	        return navigator.userAgent.match(/Android/i);
+	    },
+	    BlackBerry: function() {
+	        return navigator.userAgent.match(/BlackBerry/i);
+	    },
+	    iOS: function() {
+	        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	    },
+	    Opera: function() {
+	        return navigator.userAgent.match(/Opera Mini/i);
+	    },
+	    Windows: function() {
+	        return navigator.userAgent.match(/IEMobile/i);
+	    },
+	    any: function() {
+	        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+	    }
+	};
+
 	overviewMapDijit.startup();
-	if ('matchMedia' in window) {
-		var mq = window.matchMedia('(max-width: 600px) and (orientation: portrait)');
-		if (mq.matches) overviewMapDijit.hide(); else overviewMapDijit.show();
-		mq.addListener(function(evt) {
-			if (mq.matches) overviewMapDijit.hide(); else overviewMapDijit.show();
-		});
-	}
+
+	if (isMobile.any()) {overviewMapDijit.hide();}
+	// if ('matchMedia' in window) {
+	// 	var mq = window.matchMedia('(max-width: 600px) and (orientation: portrait)');
+	// 	if (mq.matches) overviewMapDijit.hide(); else overviewMapDijit.show();
+	// 	mq.addListener(function(evt) {
+	// 		if (mq.matches) overviewMapDijit.hide(); else overviewMapDijit.show();
+	// 	});
+	// }
 	else overviewMapDijit.show();
 
 	// map layers
