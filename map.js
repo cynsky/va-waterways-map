@@ -87,13 +87,6 @@ require([
 	overviewMapDijit.startup();
 
 	if (isMobile.any()) {overviewMapDijit.hide();}
-	// if ('matchMedia' in window) {
-	// 	var mq = window.matchMedia('(max-width: 600px) and (orientation: portrait)');
-	// 	if (mq.matches) overviewMapDijit.hide(); else overviewMapDijit.show();
-	// 	mq.addListener(function(evt) {
-	// 		if (mq.matches) overviewMapDijit.hide(); else overviewMapDijit.show();
-	// 	});
-	// }
 	else overviewMapDijit.show();
 
 	// map layers
