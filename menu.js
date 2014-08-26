@@ -20,6 +20,11 @@ function(query, domAttr) {
 	query('button[data-layer=radar').connect('onclick', function() {
 		if (map.getZoom() > 9) map.setZoom(9);
 	})
+
+	query('button[data-layer=imagery').connect('onclick', function() {
+		//alert(map.getZoom());
+		if (map.getZoom() > 18) map.setZoom(18);
+	})
 });
 
 function showLayer(layerId) {
