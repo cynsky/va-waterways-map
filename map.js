@@ -120,7 +120,11 @@ require([
 			{ id: "radar", visible: false, refreshInterval: 5 }),
 		// tide predictions
 		new KMLLayer("http://tonygambone.org/va-waterways-map/data/coops-tidepredictions_2.kmz",
-			{ id: "tide", visible: false })
+			{ id: "tide", visible: false }),
+
+		// weather stations
+		new KMLLayer("http://tonygambone.org/va-waterways-map/data/CO-OPS_active_stations_DEQ_special.kmz",
+			{ id: "stations", visible: false })
 		]);
 
 	// popups
