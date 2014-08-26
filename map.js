@@ -88,8 +88,6 @@ require([
 
 	if (isMobile.any()) {overviewMapDijit.hide();}
 	else overviewMapDijit.show();
-	//test code for mobile devices - jnt
-	document.getElementById("menuBar").style.height = "60px";
 
 	// map layers
 	map.addLayers([
