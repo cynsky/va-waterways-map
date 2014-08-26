@@ -86,11 +86,7 @@ require([
 
 	overviewMapDijit.startup();
 
-	if (isMobile.any()) {
-		overviewMapDijit.hide();
-		document.getElementById("menuBar").style.height = "60px";
-		document.getElementById("map").style.top = "60px";
-	}
+	if (isMobile.any()) {overviewMapDijit.hide();}
 	else overviewMapDijit.show();
 
 	// map layers
