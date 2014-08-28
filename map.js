@@ -98,7 +98,7 @@ require([
 		new FeatureLayer("http://deq.virginia.gov/arcgis/rest/services/staff/Estuaries_2012/MapServer/1",
 			{ id: "est", visible: false, outFields: ["WATER_NAME", "LOCATION", "AQUA_LIFE", "FISH_CONSU", "RECREATION", "SHELLFISH", "ID305B"] }),
 		// boat ramps
-		new KMLLayer("http://tonygambone.org/va-waterways-map/data/DGIF_Boating_Access_Sites_custom_2.kmz",
+		new KMLLayer("http://nodedevl.deq.virginia.gov/map/data/DGIF_Boating_Access_Sites_custom_2.kmz",
 			{ id: "ramp", visible: false }),
 		// imagery
 		new ArcGISTiledMapServiceLayer("http://gismaps.vita.virginia.gov/arcgis/rest/services/MostRecentImagery/MostRecentImagery_WGS/MapServer",
@@ -119,11 +119,11 @@ require([
 		new ArcGISDynamicMapServiceLayer("http://gis.srh.noaa.gov/arcgis/rest/services/RIDGERadar/MapServer",
 			{ id: "radar", visible: false, refreshInterval: 5 }),
 		// tide predictions
-		new KMLLayer("http://tonygambone.org/va-waterways-map/data/coops-tidepredictions_2.kmz",
+		new KMLLayer("http://nodedevl.deq.virginia.gov/map/data/coops-tidepredictions_2.kmz",
 			{ id: "tide", visible: false }),
 
 		// weather stations
-		new KMLLayer("http://tonygambone.org/va-waterways-map/data/CO-OPS_active_stations_DEQ_special.kmz",
+		new KMLLayer("http://nodedevl.deq.virginia.gov/map/data/CO-OPS_active_stations_DEQ_special.kmz",
 			{ id: "stations", visible: false })
 		]);
 

@@ -8,7 +8,7 @@ format.
 It was developed by a team from the [Virginia Department of Environmental Quality](http://www.deq.virginia.gov/) for the Commonwealth Datathon on August
 21-22, 2014.
 
-The live application is [hosted on GitHub](http://tonygambone.github.io/va-waterways-map/).
+The live application is [hosted at DEQ](http://nodedevl.deq.virginia.gov/map/). Please consider it in beta state.
 
 Data Sources
 ------------
