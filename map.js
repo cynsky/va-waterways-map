@@ -94,7 +94,6 @@ require([
 		mp.style.top = "60px";
 		};
 
-
 	// map layers
 	map.addLayers([
 		// hospitals
