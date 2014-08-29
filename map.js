@@ -86,13 +86,12 @@ require([
 
 	overviewMapDijit.startup();
 
-	if (isMobile.any()) {overviewMapDijit.hide();}
+	if (isMobile.any()) {overviewMapDijit.hide();
+		document.getElementById('menuBar').setAttribute("style", "height:60px");
+		document.getElementById('map').setAttribute("style", "top:60px");
+	}
 
-	else {overviewMapDijit.show();
-		document.getElementById("menuBar").setAttribute("style", "height:60px");
-		document.getElementById("map").setAttribute("style", "top:60px");
-		
-		};
+	else {overviewMapDijit.show()};
 
 	// map layers
 	map.addLayers([
