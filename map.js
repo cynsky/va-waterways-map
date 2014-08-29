@@ -87,9 +87,10 @@ require([
 	overviewMapDijit.startup();
 
 	if (isMobile.any()) {overviewMapDijit.hide();}
+
 	else {overviewMapDijit.show();
-		getElementById("#menuBar").setAttribute("style", "height:60px");
-		getElementById("#map").setAttribute("style", "top:60px");
+		document.getElementById("#menuBar").setAttribute("style", "height:60px");
+		document.getElementById("#map").setAttribute("style", "top:60px");
 		
 		};
 
