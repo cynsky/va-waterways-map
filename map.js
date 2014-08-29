@@ -87,7 +87,13 @@ require([
 	overviewMapDijit.startup();
 
 	if (isMobile.any()) {overviewMapDijit.hide();}
-	else overviewMapDijit.show();
+	else {overviewMapDijit.show();
+		var mb = document.querySelector("#menubar")
+		var mp = document.querySelector("#map")
+		mb.style.height = "60px";
+		mp.style.top = "60px";
+		};
+
 
 	// map layers
 	map.addLayers([
