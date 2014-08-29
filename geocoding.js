@@ -11,8 +11,8 @@ function(Locator, SpatialReference, Point, query) {
         var addr = obj.addresses[i];
         if (addr.score > 90) {
           console.log(addr.address);
+          map.centerAndZoom(new Point(addr.location.x, addr.location.y), 14);  
           map.graphics.clear();
-          map.centerAndZoom(new Point(addr.location.x, addr.location.y), 14);
           var mapcross = new esri.symbol.PictureMarkerSymbol('images/map_cross.png', 31, 31);
           var graphic = new esri.Graphic(map.extent.getCenter(), mapcross);
           //graphic.id = "cr";
@@ -24,6 +24,8 @@ function(Locator, SpatialReference, Point, query) {
     else {alert("No valid address found")};
     console.log(obj);
   });
+
+  
 
   query('#search').connect('onkeypress', function(evt) {
     var e = evt || window.event;
