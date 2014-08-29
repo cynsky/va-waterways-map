@@ -90,7 +90,6 @@ require([
 	else {overviewMapDijit.show();
 		var mb = document.querySelector("#menubar")
 		var mp = document.querySelector("#map")
-		mb.style.height = "60px";
 		mp.style.top = "60px";
 		};
 
