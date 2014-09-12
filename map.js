@@ -121,7 +121,7 @@ require([
 			{ id: "road", visible: false }),
 		// Current RIDGELINE Radar Data
 		new ArcGISDynamicMapServiceLayer("http://gis.srh.noaa.gov/arcgis/rest/services/RIDGERadar/MapServer",
-			{ id: "radar", visible: false, refreshInterval: 30 }),
+			{ id: "radar", visible: false }),
 		// tide predictions
 		new KMLLayer("http://tonygambone.org/va-waterways-map/data/coops-tidepredictions_2.kmz",
 			{ id: "tide", visible: false }),
